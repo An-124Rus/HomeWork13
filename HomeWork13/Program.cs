@@ -113,6 +113,16 @@
                         userInput = Console.ReadLine();
                     }
                     break;
+                default:
+                    Console.Clear();
+                    Console.WriteLine("Неправильный ввод.");                    
+                    Console.WriteLine("Ввести имя пользователя - введите SetName");
+                    Console.WriteLine("Изменить цвет консоли - введите ChangeConsoleColor");
+                    Console.WriteLine("Изменить цвет текста - введите ChangeTextColor");
+                    Console.WriteLine("Выход - введите ESC");
+                    Console.WriteLine("Введите команду: ");
+                    userInput = Console.ReadLine();
+                    break;
             }
         }
         Console.WriteLine("\nСеанс закончен");
