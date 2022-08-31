@@ -6,18 +6,18 @@
         string userInput;
 
         Console.WriteLine("Приветствуем в консоли!");
-        Console.WriteLine("\nВвести имя пользователя - 1");
-        Console.WriteLine("Изменить цвет консоли - 2");
-        Console.WriteLine("Изменить цвет текста - 3");
+        Console.WriteLine("\nВвести имя пользователя -  введите SetName");
+        Console.WriteLine("Изменить цвет консоли - введите ChangeConsoleColor");
+        Console.WriteLine("Изменить цвет текста - введите ChangeTextColor");
         Console.WriteLine("Выход - введите ESC");
-        Console.WriteLine("Введите пункт меню: ");
+        Console.WriteLine("Введите команду: ");
         userInput = Console.ReadLine();
 
         while (userInput != "ESC")
         {
             switch (userInput)
             {
-                case "1":
+                case "SetName":
                     Console.WriteLine("Введите имя авторизованного пользователя: ");
                     name = Console.ReadLine();
 
@@ -40,76 +40,76 @@
                             Console.Write(symbol);
                         }
 
-                        Console.WriteLine("\nИзменить цвет консоли - 2");
-                        Console.WriteLine("Изменить цвет текста - 3");
+                        Console.WriteLine("\nИзменить цвет консоли - введите ChangeConsoleColor");
+                        Console.WriteLine("Изменить цвет текста - введите ChangeTextColor");
                         Console.WriteLine("Выход - введите ESC");
-                        Console.WriteLine("Введите пункт меню: ");
+                        Console.WriteLine("Введите команду: ");
                         userInput = Console.ReadLine();
                     }
                     else
                     {
                         Console.WriteLine("Имя пользователя не авторизовано.");
-                        Console.WriteLine("\nВвести имя пользователя - 1");
-                        Console.WriteLine("Изменить цвет консоли - 2");
-                        Console.WriteLine("Изменить цвет текста - 3");
+                        Console.WriteLine("\nВвести имя пользователя - введите SetName");
+                        Console.WriteLine("Изменить цвет консоли - введите ChangeConsoleColor");
+                        Console.WriteLine("Изменить цвет текста - введите ChangeTextColor");
                         Console.WriteLine("Выход - введите ESC");
-                        Console.WriteLine("Введите пункт меню: ");
+                        Console.WriteLine("Введите команду: ");
                         userInput = Console.ReadLine();
                     }                    
                     break;
 
-                case "2":
-                    Console.WriteLine("Введите цвет консоли Blue (синий) или Red (красный): ");
+                case "ChangeConsoleColor":
+                    Console.WriteLine("Введите цвет консоли Blue (Синий) или Red (Красный): ");
                     string consoleColor = Console.ReadLine();
 
-                    if (consoleColor == "Blue")
+                    if (consoleColor == "Blue" || consoleColor == "Синий")
                     {
                         Console.BackgroundColor = ConsoleColor.Blue;
                         Console.Clear();
-                        Console.WriteLine("Ввести имя пользователя - 1");
-                        Console.WriteLine("Изменить цвет консоли - 2");
-                        Console.WriteLine("Изменить цвет текста - 3");
+                        Console.WriteLine("Ввести имя пользователя - введите SetName");
+                        Console.WriteLine("Изменить цвет консоли - введите ChangeConsoleColor");
+                        Console.WriteLine("Изменить цвет текста - введите ChangeTextColor");
                         Console.WriteLine("Выход - введите ESC");
-                        Console.WriteLine("Введите пункт меню: ");
+                        Console.WriteLine("Введите команду: ");
                         userInput = Console.ReadLine();
                     }
                     else
                     {
                         Console.BackgroundColor = ConsoleColor.Red;
                         Console.Clear();
-                        Console.WriteLine("Ввести имя пользователя - 1");
-                        Console.WriteLine("Изменить цвет консоли - 2");
-                        Console.WriteLine("Изменить цвет текста - 3");
+                        Console.WriteLine("Ввести имя пользователя - введите SetName");
+                        Console.WriteLine("Изменить цвет консоли - введите ChangeConsoleColor");
+                        Console.WriteLine("Изменить цвет текста - введите ChangeTextColor");
                         Console.WriteLine("Выход - введите ESC");
-                        Console.WriteLine("Введите пункт меню: ");
+                        Console.WriteLine("Введите команду: ");
                         userInput = Console.ReadLine();
                     }
                     break;
 
-                case "3":
-                    Console.WriteLine("Введите цвет текста Black (чёрный) или Green (зелёный): ");
+                case "ChangeTextColor":
+                    Console.WriteLine("Введите цвет текста Black (Чёрный) или Green (Зелёный): ");
                     string textColor = Console.ReadLine();
 
-                    if (textColor == "Black")
+                    if (textColor == "Black" || textColor == "Чёрный")
                     {
                         Console.ForegroundColor = ConsoleColor.Black;
                         Console.Clear();
-                        Console.WriteLine("Ввести имя пользователя - 1");
-                        Console.WriteLine("Изменить цвет консоли - 2");
-                        Console.WriteLine("Изменить цвет текста - 3");
+                        Console.WriteLine("Ввести имя пользователя - введите SetName");
+                        Console.WriteLine("Изменить цвет консоли - введите ChangeConsoleColor");
+                        Console.WriteLine("Изменить цвет текста - введите ChangeTextColor");
                         Console.WriteLine("Выход - введите ESC");
-                        Console.WriteLine("Введите пункт меню: ");
+                        Console.WriteLine("Введите команду: ");
                         userInput = Console.ReadLine();
                     }
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.Clear();
-                        Console.WriteLine("Ввести имя пользователя - 1");
-                        Console.WriteLine("Изменить цвет консоли - 2");
-                        Console.WriteLine("Изменить цвет текста - 3");
+                        Console.WriteLine("Ввести имя пользователя - введите SetName");
+                        Console.WriteLine("Изменить цвет консоли - введите ChangeConsoleColor");
+                        Console.WriteLine("Изменить цвет текста - введите ChangeTextColor");
                         Console.WriteLine("Выход - введите ESC");
-                        Console.WriteLine("Введите пункт меню: ");
+                        Console.WriteLine("Введите команду: ");
                         userInput = Console.ReadLine();
                     }
                     break;
